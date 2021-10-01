@@ -23,7 +23,6 @@
 
 /* *****debug***** */
 .debug .header-top {
-    height: 100px;
     background-color: #e579e6;
 }
 .debug #logo {
@@ -35,7 +34,7 @@
     background-color: lightcoral;
 }
 .debug .header-bottom {
-    height: 300px;
+    height: 380px;
     background-color: #e1d67a;
 }
 .debug main{
@@ -63,7 +62,7 @@
 }
 
 
-/* header */
+/* header top*/
 header {
     width: 100%;
 }
@@ -91,6 +90,29 @@ header {
 }
 
 
+/* header bottom */
+.header-bottom {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+}
+.header-bottom::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}  
+.jumbo-content {
+    position: absolute;
+    bottom: 50px;
+    width: 50%;
+} 
 
 
 /* main */
